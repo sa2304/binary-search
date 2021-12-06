@@ -16,6 +16,14 @@ void TestBinarySearch() {
     assert(-1 == s.search(numbers, 1));
   }
   {
+    vector<int> numbers{-1};
+    assert(-1 == s.search(numbers, 2));
+  }
+{
+vector<int> numbers{-1,0,3,5,9,12};
+assert(-1 == s.search(numbers, 13));
+}
+  {
     vector<int> numbers{0};
     assert(0 == s.search(numbers, 0));
     assert(-1 == s.search(numbers, 2));
